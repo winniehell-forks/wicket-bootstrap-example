@@ -1,0 +1,10 @@
+language: java
+before_install:
+- git clone https://github.com/l0rdn1kk0n/wicket-bootstrap.git ~/build/wicket-bootstrap
+- cd ~/build/wicket-bootstrap
+- mvn clean install
+- cd "${OLDPWD}"
+install:
+- mvn clean install
+script:
+- find target
