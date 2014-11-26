@@ -1,4 +1,7 @@
 language: java
+cache:
+  directories:
+  - $HOME/.m2
 before_install:
 - git clone https://github.com/l0rdn1kk0n/wicket-bootstrap.git ~/build/wicket-bootstrap
 - cd ~/build/wicket-bootstrap
